@@ -12,6 +12,7 @@
 - [💻 Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Setup](#setup)
+  - [Clone](#clone)
   - [Usage](#usage)
 - [👥 Authors](#authors)
 - [🤝 Contributing](#contributing)
@@ -67,10 +68,23 @@ Download and Install the latest Ruby distributions.
 - *Docs*
 [Installation Documentation](https://www.ruby-lang.org/en/documentation/installation/)
 
+### Clone
+
+- Clone this repo to your local machine using `https://github.com/Abdelaziz-Mahdi/school-library.git`
+
 ### Usage
-Using cl
+
+Using cl in the project directory:
 - irb.
-- Paste the code and run it.
+- For Person class:
+  - require './src/person.rb'.
+  - Add new person by using Person.new(name, age, parent_permission).
+- For Student class:
+  - require './src/student.rb'.
+  - Add new student by using Student.new(name, age, parent_permission).
+- For Teacher class:
+  - require './src/teacher.rb'.
+  - Add new teacher by using: Teacher.new(name, age, specialization).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -106,7 +120,7 @@ Give a ⭐️ if you like this project!
 
 ## ⭐️ Future Feature <a name="support"></a>
 
-- [ ] Project 1: add Person, Student, and Teacher classes.
+- [X] Project 1: add Person, Student, and Teacher classes.
 - [ ] Project 2: use the "Decorator" design pattern.
 - [ ] Project 3: set up associations.
 - [ ] Project 4: add basic UI.
@@ -127,4 +141,3 @@ Give a ⭐️ if you like this project!
 This project is [MIT](./LICENSE) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
