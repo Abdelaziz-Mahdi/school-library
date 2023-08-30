@@ -9,8 +9,4 @@ class Teacher < Person
   def can_use_services?
     true
   end
-
-  def teach
-    'Everything in Ruby is an Object'
-  end
 end
