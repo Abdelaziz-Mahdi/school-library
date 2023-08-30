@@ -121,7 +121,7 @@ Give a ⭐️ if you like this project!
 ## ⭐️ Future Feature <a name="support"></a>
 
 - [X] Project 1: add Person, Student, and Teacher classes.
-- [ ] Project 2: use the "Decorator" design pattern.
+- [X] Project 2: use the "Decorator" design pattern.
 - [ ] Project 3: set up associations.
 - [ ] Project 4: add basic UI.
 - [ ] Project 5: refactor your code.
