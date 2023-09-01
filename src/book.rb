@@ -1,7 +1,7 @@
 class Book
-  attr_accessor :data
+  attr_accessor :title
 
-  def initialize(data)
-    @data = data
+  def initialize(title)
+    @title = title
   end
 end
