@@ -1,3 +1,4 @@
+require('./src/rental')
 require('./src/nameable')
 
 class Person < Nameable
@@ -10,6 +11,12 @@ class Person < Nameable
     @name = name
     @age = age
     @parent_permission = parent_permission
+    @rentals = []
+  end
+
+  def add_rental(rental)
+    @rentals << rental
+    rental.add_rental(self)
   end
 
   def correct_name
