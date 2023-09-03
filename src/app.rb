@@ -16,7 +16,7 @@ class App
       puts 'No books available'
     else
       @books.each_with_index do |book, index|
-        puts "#{index + 1}. #{book.title} by #{book.author}"
+        puts "#{index}): #{book.title} by #{book.author}"
       end
     end
   end
@@ -26,7 +26,7 @@ class App
       puts 'No people available'
     else
       @people.each_with_index do |person, index|
-        puts "person_id #{index + 1}: (#{person.class}).  person_name #{person.name} person_age #{person.age}"
+        puts "#{index}): (#{person.class}) Name #{person.name} Age #{person.age}"
       end
     end
   end
@@ -79,14 +79,14 @@ class App
   end
 
   def create_rental
-    puts 'Who wants to rent a book? (insert id)'
+    puts 'Who wants to rent a book? (insert index)'
     list_people
-    person_id = gets.chomp.to_i
-    person = @people[person_id - 1]
-    puts 'Which book? (insert id)'
+    person_index = gets.chomp.to_i
+    person = @people[person_index]
+    puts 'Which book? (insert index)'
     list_books
-    book_id = gets.chomp.to_i
-    book = @books[book_id - 1]
+    book_index = gets.chomp.to_i
+    book = @books[book_index]
     puts 'Date: (YYYY-MM-DD)'
     date = gets.chomp
     rental = Rental.new(date, book, person)
@@ -95,10 +95,10 @@ class App
   end
 
   def list_rentals
-    puts 'Who wants to see their rentals? (insert id)'
+    puts 'Who wants to see their rentals? (insert index)'
     list_people
-    person_id = gets.chomp.to_i
-    person = @people[person_id - 1]
+    person_index = gets.chomp.to_i
+    person = @people[person_index]
     puts 'Rentals:'
     person.rentals.each do |rental|
       puts "#{rental.book.title} by #{rental.book.author} on #{rental.date}"
