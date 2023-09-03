@@ -1,7 +1,7 @@
 require('./src/person')
 
 class Student < Person
-  attr_reader :classroom
+  attr_reader :classroom, :age, :name, :id, :parent_permission
 
   def initialize(age, classroom, name = 'Unknown', parent_permission: true)
     super(name, age, parent_permission: parent_permission)
